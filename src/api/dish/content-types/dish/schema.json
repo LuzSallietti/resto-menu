@@ -1,0 +1,50 @@
+{
+  "kind": "collectionType",
+  "collectionName": "dishes",
+  "info": {
+    "singularName": "dish",
+    "pluralName": "dishes",
+    "displayName": "Dish",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "visible": {
+      "type": "boolean"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "category": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::category.category",
+      "inversedBy": "dishes"
+    },
+    "diet_specifications": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::diet-specification.diet-specification",
+      "inversedBy": "dishes"
+    }
+  }
+}

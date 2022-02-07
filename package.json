@@ -1,0 +1,30 @@
+{
+  "name": "qr-menu",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A Strapi application",
+  "scripts": {
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "@strapi/strapi": "4.0.7",
+    "@strapi/plugin-users-permissions": "4.0.7",
+    "@strapi/plugin-i18n": "4.0.7",
+    "sqlite3": "5.0.2"
+  },
+  "author": {
+    "name": "A Strapi developer"
+  },
+  "strapi": {
+    "uuid": "0536190b-1d67-4ac3-bdf8-3c1af43f687f"
+  },
+  "engines": {
+    "node": ">=12.x.x <=16.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}
